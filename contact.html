@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Whisper Wild</title>
+  <meta name="description" content="Whisper Wild creates engaging, sensory‑friendly grooming tools." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  
+<header class="container">
+  <div class="logo">
+    <img src="assets/logo.png" alt="Whisper Wild logo" />
+    <span>Whisper Wild</span>
+  </div>
+  <nav>
+    <a href="index.html" class="">Home</a>
+    <a href="product.html" class="">Product</a>
+    <a href="about.html" class="">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+  <main class="container">
+    
+<section class="section two-col">
+  <div class="card">
+    <h2>Get in touch</h2>
+    <p>Interested in partnering, investing, or piloting Critter Clippers? We’d love to connect.</p>
+    <ul class="list">
+      <li>Email: <a href="mailto:hello@whisperwild.co">hello@whisperwild.co</a> (update to your preferred address)</li>
+      <li>Social: Add links here (LinkedIn, Instagram)</li>
+    </ul>
+    <p class="pill">Aligned with women‑led consumer innovation</p>
+  </div>
+  <div class="card">
+    <h3>Quick contact form</h3>
+    <form method="post" action="mailto:hello@whisperwild.co" enctype="text/plain">
+      <label for="name">Name</label><br/>
+      <input id="name" name="Name" type="text" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0b1220;color:var(--text);" required><br/><br/>
+      <label for="email">Email</label><br/>
+      <input id="email" name="Email" type="email" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0b1220;color:var(--text);" required><br/><br/>
+      <label for="msg">Message</label><br/>
+      <textarea id="msg" name="Message" rows="4" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0b1220;color:var(--text);" placeholder="Tell us a bit about your needs"></textarea><br/><br/>
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <p class="muted" style="color:var(--muted);font-size:.85rem;margin-top:8px">Note: this opens your email app; for a hosted form, use Netlify Forms or Tally.</p>
+  </div>
+</section>
+
+  </main>
+  
+<footer class="container">
+  <div>© <span id="y"></span> Whisper Wild • Sensory‑friendly care</div>
+  <div>Built for free hosting on GitHub Pages or Netlify</div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
