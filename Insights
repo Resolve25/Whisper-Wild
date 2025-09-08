@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Insights — Whisper Wild</title>
+  <meta name="description" content="Key statistics and lived experiences during nail care for children with sensory differences." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="container">
+  <div class="logo">
+    <img src="logo.png" alt="Whisper Wild logo" />
+    <span>Whisper Wild</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="product.html">Product</a>
+    <a href="about.html">About</a>
+    <a href="insights.html" class="active">Insights</a>
+    <a href="investors.html">Investors</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="section card">
+    <div class="kicker">Context</div>
+    <h2>Why grooming can trigger meltdowns</h2>
+    <p>Many children with autism and sensory processing differences experience nail care as a high-intensity sensory event: sound, vibration, pressure, and unpredictability all stack together. Engagement-first design gives children predictability and choice—reducing fear responses and increasing cooperation.</p>
+  </section>
+
+  <section class="section two-col">
+    <div class="card">
+      <div class="kicker">Key stats</div>
+      <h3>What we’re designing for</h3>
+      <ul class="list">
+        <li><strong>Autism prevalence:</strong> ~“1 in 31” U.S. children (varies by year and method)</li>
+        <li><strong>Sensory processing challenges:</strong> often estimated at <strong>~5–16%</strong> of children</li>
+        <li><strong>Households impacted:</strong> millions navigating daily care routines with added sensory load</li>
+      </ul>
+      <p class="pill">Rates differ by study; we design for lived experience and inclusive use.</p>
+    </div>
+
+    <div class="card">
+      <div class="kicker">What kids report feeling</div>
+      <h3>Common triggers during nail trims</h3>
+      <ul class="list">
+        <li><strong>Sound:</strong> clipping or buzzing perceived as sharp/threatening</li>
+        <li><strong>Vibration/pressure:</strong> unexpected micro-movements amplify discomfort</li>
+        <li><strong>Smell/touch:</strong> clinical cues raise anxiety before the trim starts</li>
+        <li><strong>Loss of control:</strong> “done to me” vs. “I choose” increases stress</li>
+      </ul>
+      <p>Whisper Wild’s approach: predictable cues, playful framing, safe rounded blades, and an opt-in flow to reduce perceived threat.</p>
+    </div>
+  </section>
+
+  <section class="section card">
+    <div class="kicker">Design principles</div>
+    <h3>Engagement before action</h3>
+    <ul class="list">
+      <li>Warm, animal-themed companion replaces clinical tools</li>
+      <li>Predictable, low-intensity lights & sounds (with mute)</li>
+      <li>Short, child-led steps: look → touch → practice → trim</li>
+      <li>Clean finish: integrated nail catcher reduces lingering mess</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="container">
+  <div>© <span id="y"></span> Whisper Wild • Sensory-friendly care</div>
+  <div>Built for free hosting on GitHub Pages or Netlify</div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
