@@ -1,8 +1,15 @@
 
 :root{
-  --bg:#0f172a; --panel:#111827; --text:#e5e7eb; --muted:#94a3b8;
-  --brand:#38bdf8; --accent:#a78bfa; --ok:#34d399; --border:rgba(255,255,255,.08);
+  --bg:#0e1726;        /* page background */
+  --panel:#0b1321;     /* header/footer panels */
+  --text:#e6eef7;      /* body text */
+  --muted:#9db4c9;     /* secondary text */
+  --brand:#14b8a6;     /* primary accent (teal) */
+  --accent:#60a5fa;    /* secondary accent (sky) */
+  --ok:#34d399;        /* success/badge */
+  --border:rgba(255,255,255,.10);
 }
+
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#0b1220);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
 a{color:var(--brand);text-decoration:none}
