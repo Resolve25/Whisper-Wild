@@ -1,3 +1,6 @@
+html, body {
+  font-family: "Quicksand", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
 
 :root{
   --bg:#0e1726;        /* page background */
