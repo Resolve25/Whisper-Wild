@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Investors — Whisper Wild</title>
+  <meta name="description" content="Investor materials and downloads for Whisper Wild." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="container">
+  <div class="logo">
+    <img src="logo.png" alt="Whisper Wild logo" />
+    <span>Whisper Wild</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="product.html">Product</a>
+    <a href="about.html">About</a>
+    <a href="insights.html">Insights</a>
+    <a href="investors.html" class="active">Investors</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="section card">
+    <div class="kicker">Overview</div>
+    <h2>Investor materials</h2>
+    <p>Download the latest Whisper Wild materials. For an NDA or a live walkthrough, <a href="contact.html">contact us</a>.</p>
+  </section>
+
+  <section class="section two-col">
+    <div class="card">
+      <div class="kicker">Core docs</div>
+      <h3>Decks & analyses</h3>
+      <ul class="list">
+        <li><a href="docs/WhisperWild_PitchDeck.pdf" download>Pitch Deck (PDF)</a></li>
+        <li><a href="docs/WhisperWild_MarketAnalysis.pdf" download>Market Analysis (PDF)</a></li>
+        <li><a href="docs/WhisperWild_PhasePlan.pdf" download>Phase-by-Phase Plan (PDF)</a></li>
+        <li><a href="docs/WhisperWild_UnitEconomics.xlsx" download>Unit Economics (XLSX)</a></li>
+      </ul>
+      <p class="pill">Tip: keep files in /docs so links stay clean</p>
+    </div>
+
+    <div class="card">
+      <div class="kicker">Optional</div>
+      <h3>Additional materials</h3>
+      <ul class="list">
+        <li><a href="docs/WhisperWild_ExecutiveSummary.pdf" download>Executive Summary (PDF)</a></li>
+        <li><a href="docs/WhisperWild_TechOverview.pdf" download>Technical Overview (PDF)</a></li>
+        <li><a href="docs/WhisperWild_BetaTestPlan.pdf" download>Beta Test Plan (PDF)</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="container">
+  <div>© <span id="y"></span> Whisper Wild • Sensory-friendly care</div>
+  <div>Built for free hosting on GitHub Pages or Netlify</div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
