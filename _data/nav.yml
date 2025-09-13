@@ -2,9 +2,9 @@
   url: /
 - label: About
   url: /about/
-- label: Critter Clippers
-  url: /products/critter-clippers/
-- label: Tiny Tame Buzzers
-  url: /products/tiny-tame-buzzers/
+- label: Products
+  url: /products/
+- label: Investors
+  url: /investors/
 - label: Contact
   url: /contact/
