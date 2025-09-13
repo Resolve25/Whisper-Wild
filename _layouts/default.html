@@ -1,0 +1,8 @@
+<header>
+  <a href="{{ "/" | relative_url }}"><img src="{{ "/logo.png" | relative_url }}" alt="Whisper Wild logo"></a>
+  <nav class="tabs">
+    {% for item in site.data.nav %}
+      <a href="{{ item.url | relative_url }}" class="{% if page.url == item.url %}active{% endif %}">{{ item.label }}</a>
+    {% endfor %}
+  </nav>
+</header>
