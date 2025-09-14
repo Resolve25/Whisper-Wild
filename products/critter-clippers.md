@@ -1,14 +1,18 @@
 ---
-title: Critter Clippers
-layout: product
-permalink: /products/critter-clippers/
-price: $35–$39
-specs:
-  - PDV-coated ceramic, rounded blade
-  - Inward-scooping, non-linear cutting motion
-  - LED eyes (green/purple/blue)
-  - AAA battery, waterproof silicone body
-  - Fingernail/toenail cradle inserts
+title: Products
+permalink: /products/
 ---
 
-The Critter Clippers are built for sensory comfort and buy-in. Lights/sounds encourage participation; the blade geometry avoids sharp edges.
+<div class="cards">
+  <div class="card">
+    <h3>Critter Clippers 🐊</h3>
+    <p>Rounded PDV-coated blade, inward-scooping motion, LED eyes, fingernail & toenail cradle inserts.</p>
+    <p><a class="cta" href="/products/critter-clippers/">Learn more</a></p>
+  </div>
+
+  <div class="card">
+    <h3>Tiny Tame Buzzers 🐻</h3>
+    <p>Low-vibration trimmers with PDV-coated blade and rechargeable power for calmer haircuts.</p>
+    <p><a class="cta" href="/products/tiny-tame-buzzers/">Learn more</a></p>
+  </div>
+</div>
