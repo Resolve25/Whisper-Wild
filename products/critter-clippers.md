@@ -6,7 +6,7 @@ permalink: /products/
 <div class="cards">
   <div class="card">
     <h3>Critter Clippers 🐊</h3>
-    <p>Rounded PDV-coated blade, inward-scooping motion, LED eyes, fingernail & toenail cradle inserts.</p>
+    <p>Rounded PDV-coated blade with an inward-scooping motion, LED eyes in soothing colors, AAA battery, and cradle inserts for fingers & toes.</p>
     <p><a class="cta" href="/products/critter-clippers/">Learn more</a></p>
   </div>
 
@@ -16,3 +16,4 @@ permalink: /products/
     <p><a class="cta" href="/products/tiny-tame-buzzers/">Learn more</a></p>
   </div>
 </div>
+
