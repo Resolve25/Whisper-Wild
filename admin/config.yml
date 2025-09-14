@@ -1,0 +1,62 @@
+backend:
+  name: git-gateway   # works with Netlify Identity (free)
+  branch: main
+
+media_folder: "assets/uploads"   # where images are saved in repo
+public_folder: "/assets/uploads" # how the site references them
+
+publish_mode: editorial_workflow  # optional: adds Draft/Review/Publish
+
+collections:
+  # Single pages (files)
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home"
+        file: "index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "about"
+        label: "About"
+        file: "about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "products-landing"
+        label: "Products (Landing)"
+        file: "products.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "investors"
+        label: "Investors"
+        file: "investors.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "contact"
+        label: "Contact"
+        file: "contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  # Product detail pages (folder-based)
+  - name: "product_pages"
+    label: "Product Pages"
+    label_singular: "Product Page"
+    folder: "products"
+    create: true
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string", hint: "e.g. /products/critter-clippers/" }
+      - { label: "Body", name: "body", widget: "markdown" }
