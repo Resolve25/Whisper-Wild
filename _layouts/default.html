@@ -1,8 +1,5 @@
-<header>
-  <a href="{{ "/" | relative_url }}"><img src="{{ "/logo.png" | relative_url }}" alt="Whisper Wild logo"></a>
-  <nav class="tabs">
-    {% for item in site.data.nav %}
-      <a href="{{ item.url | relative_url }}" class="{% if page.url == item.url %}active{% endif %}">{{ item.label }}</a>
-    {% endfor %}
-  </nav>
 </header>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<style> body{ font-family: "Quicksand", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; } </style>
