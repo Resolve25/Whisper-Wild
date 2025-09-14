@@ -1,7 +1,8 @@
 ---
 title: Contact
-layout: default
 permalink: /contact/
 ---
 
-Email us: [Whisperwildsensory@gmail.com](mailto:Whisperwildsesnory@gmail.com)
+Questions, partnerships, or press?  
+**Email:** [whisperwildsensory@gmail.com](mailto:whisperwildsensory@gmail.com)
+
