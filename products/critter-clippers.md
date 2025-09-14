@@ -1,19 +1,15 @@
 ---
-title: Products
-permalink: /products/
+title: Critter Clippers
+permalink: /products/critter-clippers/
 ---
 
-<div class="cards">
-  <div class="card">
-    <h3>Critter Clippers 🐊</h3>
-    <p>Rounded PDV-coated blade with an inward-scooping motion, LED eyes in soothing colors, AAA battery, and cradle inserts for fingers & toes.</p>
-    <p><a class="cta" href="/products/critter-clippers/">Learn more</a></p>
-  </div>
+**Key features**
+- PDV-coated ceramic, rounded blade (non-linear, inward-scooping motion)
+- LED eyes in soothing colors (green / purple / blue)
+- Nail cradle inserts for fingers and toes
+- AAA battery, ergonomic waterproof silicone body
 
-  <div class="card">
-    <h3>Tiny Tame Buzzers 🐻</h3>
-    <p>Low-vibration trimmers with PDV-coated blade and rechargeable power for calmer haircuts.</p>
-    <p><a class="cta" href="/products/tiny-tame-buzzers/">Learn more</a></p>
-  </div>
-</div>
+**Why it helps**  
+Lights & sounds create buy-in. Rounded geometry avoids sharp nail edges and reduces sensory spikes.
+
 
