@@ -1,11 +1,12 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Resolve25/Whisper-Wild   # <--- your GitHub username/repo
   branch: main
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
-publish_mode: editorial_workflow  # you get Draft/Review/Publish
+publish_mode: editorial_workflow  # gives Draft/Review/Publish states
 
 collections:
   - name: "pages"
