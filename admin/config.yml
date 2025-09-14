@@ -1,14 +1,13 @@
 backend:
-  name: git-gateway   # works with Netlify Identity (free)
+  name: git-gateway
   branch: main
 
-media_folder: "assets/uploads"   # where images are saved in repo
-public_folder: "/assets/uploads" # how the site references them
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
-publish_mode: editorial_workflow  # optional: adds Draft/Review/Publish
+publish_mode: editorial_workflow  # you get Draft/Review/Publish
 
 collections:
-  # Single pages (files)
   - name: "pages"
     label: "Pages"
     files:
@@ -27,7 +26,7 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
-      - name: "products-landing"
+      - name: "products"
         label: "Products (Landing)"
         file: "products.md"
         fields:
@@ -48,7 +47,6 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
-  # Product detail pages (folder-based)
   - name: "product_pages"
     label: "Product Pages"
     label_singular: "Product Page"
