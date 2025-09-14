@@ -1,20 +1,4 @@
 title: Whisper Wild
-description: Sensory-friendly grooming tools
-theme: minima
-# Build settings
-markdown: kramdown
+description: Sensory-friendly grooming tools for kids and families.
 permalink: pretty
-
-# Collections for structured pages (optional but handy)
-collections:
-  pages:
-    output: true
-  products:
-    output: true
-
-# Navigation (we’ll read from _data/nav.yml)
-defaults:
-  - scope: {path: "", type: "pages"}
-    values: {layout: default}
-  - scope: {path: "", type: "products"}
-    values: {layout: product}
+markdown: kramdown
