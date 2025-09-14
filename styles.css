@@ -1,35 +1,136 @@
+/* ===========================
+   Whisper Wild design system
+   Edit only the variables below to change colors & fonts site-wide.
+   =========================== */
 :root{
-  --brand: #6bd36b;
-  --accent:#7c5cff;
-  --ink:#222;
-  --muted:#666;
-  --line:#eaeaea;
-  --bg:#fff;
+  /* Palette (soothing + playful) */
+  --brand:       #35c96d;  /* mint green */
+  --brand-dark:  #1ea85a;
+  --accent:      #7a68ff;  /* soft purple */
+  --sky:         #5cc9ff;  /* sky blue */
+  --sun:         #ffd36e;  /* warm accent */
+  --ink:         #1f2328;  /* text */
+  --muted:       #616776;
+  --line:        #e9edf2;
+  --page:        #ffffff;
+
+  /* Typography */
+  --font-body:   "Nunito", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-head:   "Poppins", var(--font-body);
+
+  /* Sizing */
+  --content-w:   980px;
+  --radius:      14px;
 }
+
+/* Global */
 *{box-sizing:border-box}
-body{margin:0;color:var(--ink);background:var(--bg);line-height:1.6}
-a{color:inherit}
+html, body{ margin:0; padding:0; background: var(--page); color: var(--ink); line-height:1.65; }
+body{ font-family: var(--font-body); }
 
-.site-header{display:flex;align-items:center;gap:24px;padding:14px 20px;border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
-.brand{font-weight:700;text-decoration:none;font-size:18px}
-.brand img{height:40px}
-.tabs{display:flex;gap:8px;flex-wrap:wrap}
-.tabs a{padding:8px 14px;border:1px solid var(--line);border-bottom:3px solid transparent;border-radius:12px 12px 0 0;text-decoration:none;background:#fafafa}
-.tabs a:hover{border-color:#ddd}
-.tabs a.active{border-color:#ddd;border-bottom-color:var(--brand);background:#fff;box-shadow:0 2px 0 var(--brand) inset}
+/* Subtle, colorful background blobs (no images) */
+.site-bg{
+  position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:
+    radial-gradient(900px 360px at 110% -20%, rgba(126,104,255,.12), transparent 60%),
+    radial-gradient(1200px 420px at -10% -30%, rgba(53,201,109,.12), transparent 60%),
+    radial-gradient(700px 300px at 50% 110%, rgba(92,201,255,.12), transparent 60%),
+    var(--page);
+}
 
-.content{max-width:980px;margin:0 auto;padding:28px 20px}
-.hero{margin:10px 0 18px;padding:24px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(180deg,#f7fff7,#fff)}
-.hero h1{margin:0 0 8px;font-size:32px}
-.badges{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:14px 0}
-.badge{display:flex;gap:8px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff}
-.badge:before{content:"✔";color:var(--brand);font-weight:700}
-.cta{display:inline-block;margin-top:10px;padding:10px 16px;border-radius:10px;text-decoration:none;color:#fff;background:var(--accent)}
-.cta.secondary{background:var(--brand);color:#0b2}
+/* Header / tabs */
+.site-header{
+  position:sticky; top:0; z-index:10;
+  display:flex; align-items:center; gap:20px;
+  padding:12px 18px; background:#fff; border-bottom:1px solid var(--line);
+  backdrop-filter: saturate(160%) blur(6px);
+}
+.brand{ font-family: var(--font-head); font-weight:700; text-decoration:none; color:var(--ink); font-size:20px }
+.brand img{ height:40px }
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:12px;padding:16px;background:#fff}
-.card h3{margin-top:0}
+.tabs{ display:flex; gap:10px; flex-wrap:wrap }
+.tabs a{
+  padding:10px 16px;
+  border:1px solid var(--line);
+  border-bottom:3px solid transparent;
+  border-radius:12px 12px 0 0;
+  text-decoration:none; color:var(--ink);
+  background:#f8fafc;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.tabs a:hover{
+  transform: translateY(-1px);
+  border-color:#d9e2ec;
+}
+.tabs a.active{
+  border-color:#d9e2ec;
+  border-bottom-color: var(--accent);
+  background:#fff;
+  box-shadow: 0 2px 0 var(--accent) inset;
+}
 
-.site-footer{border-top:1px solid var(--line);padding:16px 20px;color:var(--muted)}
+/* Layout */
+.content{ max-width: var(--content-w); margin:0 auto; padding:28px 20px }
+
+/* Hero */
+.hero{
+  margin:12px 0 20px; padding:28px;
+  border:1px solid var(--line); border-radius: calc(var(--radius) + 2px);
+  background:
+    radial-gradient(800px 380px at -10% -10%, rgba(53,201,109,.15), transparent 60%),
+    radial-gradient(700px 320px at 110% 0%, rgba(122,104,255,.14), transparent 60%),
+    #ffffff;
+}
+.hero h1{ margin:0 0 8px; font-family: var(--font-head); font-size:36px; letter-spacing:.2px }
+
+/* Badges */
+.badges{
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap:12px; margin:16px 0;
+}
+.badge{
+  display:flex; align-items:center; gap:10px;
+  padding:12px 14px; border:1px solid var(--line);
+  border-radius: var(--radius); background:#fff;
+  box-shadow: 0 1px 0 rgba(0,0,0,.03);
+}
+.badge:before{
+  content:""; width:14px; height:14px; border-radius:50%;
+  background: linear-gradient(135deg, var(--brand), var(--sky));
+  display:inline-block; flex:0 0 14px;
+}
+
+/* Buttons */
+.cta{
+  display:inline-block; margin-top:10px; padding:12px 18px;
+  border-radius: var(--radius); text-decoration:none; color:#fff; font-weight:600;
+  background: linear-gradient(135deg, var(--accent), var(--sky));
+  box-shadow: 0 8px 16px rgba(122,104,255,.18);
+  transition:.15s ease;
+}
+.cta:hover{ transform: translateY(-1px); }
+.cta.secondary{
+  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+  box-shadow: 0 8px 16px rgba(53,201,109,.18);
+}
+
+/* Cards (Products) */
+.cards{ display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:18px }
+.card{
+  border:1px solid var(--line); border-radius: calc(var(--radius) + 2px);
+  padding:18px; background:#fff;
+  box-shadow: 0 6px 20px rgba(31,35,40,.05);
+}
+.card h3{ margin-top:0; font-family: var(--font-head); font-size:22px }
+.card p{ margin:.5rem 0 0 }
+
+/* Typography scale */
+h1{ font-family: var(--font-head); font-size:36px }
+h2{ font-family: var(--font-head); font-size:28px }
+h3{ font-family: var(--font-head); font-size:22px }
+p, li{ font-size:17px }
+small{ color:var(--muted) }
+
+/* Footer */
+.site-footer{ border-top:1px solid var(--line); padding:16px 20px; color:var(--muted) }
 
