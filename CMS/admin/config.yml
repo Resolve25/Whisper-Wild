@@ -1,0 +1,38 @@
+backend:
+  name: github
+  repo: Resolve25/Whisper-Wild   # your GitHub user/repo
+  branch: main
+  base_url: /admin               # CMS is served from /admin
+  auth_endpoint: /auth           # matches netlify.toml redirect
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home"
+        file: "index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - { name: "about",     label: "About",     file: "about.md",     fields: [{label:"Title",name:"title",widget:"string"}, {label:"Body",name:"body",widget:"markdown"}] }
+      - { name: "products",  label: "Products",  file: "products.md",  fields: [{label:"Title",name:"title",widget:"string"}, {label:"Body",name:"body",widget:"markdown"}] }
+      - { name: "investors", label: "Investors", file: "investors.md", fields: [{label:"Title",name:"title",widget:"string"}, {label:"Body",name:"body",widget:"markdown"}] }
+      - { name: "contact",   label: "Contact",   file: "contact.md",   fields: [{label:"Title",name:"title",widget:"string"}, {label:"Body",name:"body",widget:"markdown"}] }
+
+  - name: "product_pages"
+    label: "Product Pages"
+    folder: "products"
+    create: true
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string", hint: "e.g. /products/critter-clippers/" }
+      - { label: "Body", name: "body", widget: "markdown" }
